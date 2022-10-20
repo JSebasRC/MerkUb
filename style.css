@@ -61,7 +61,7 @@ body {
 .bg-green-gradient::before {
     content: '';
     background: linear-gradient(135deg, var(--green-2) 0%, var(--green-3) 100%) !important;
-    opacity: 0.8;
+    opacity: 0.8 !important;
     position: absolute;
     top: 0;
     left: 0;
@@ -117,11 +117,6 @@ body {
 }
 .fs-8 {
     font-size: 12px;
-}
-ul {
-    list-style: none;
-    margin-left: 0;
-    padding-left: 0;
 }
 
 .text-decoration-underline-custom:hover {
