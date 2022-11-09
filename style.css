@@ -167,9 +167,7 @@ body {
     z-index: 0;
 }
 
-/* ESTILOS HOME */
-
-#page-home .cards-home {
+.cards {
     box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
     border-radius: 16px;
     max-width: 272px;
@@ -177,23 +175,26 @@ body {
     background-color: #FFFFFF;
     cursor: pointer;
 }
-#page-home .cards-home:hover {
+.cards:hover {
     background-color: var(--orange-1);
     transition: 0.8s;
     color: #FFFFFF !important;
 }
-#page-home .icon-cards-home {
+.icon-cards {
     max-width: 64px;
     width: 100%;
     max-height: 64px;
     height: 100%;
     box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
 }
-#page-home .icon-cards-home-orange {
+.icon-cards-orange {
     width: 40px;
     height: 40px;
     box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.08);
 }
+
+/* ESTILOS HOME */
+
 
 /* ESTILOS OUR PROCCESS */
 
@@ -210,4 +211,22 @@ body {
     background-color: var(--orange-1);
     transition: 0.8s;
     color: #FFFFFF !important;
+}
+
+/* ESTILOS AGENCIES */
+.container-cards-agencies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  @media (min-width: 768px) {
+    .container-cards {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .container-cards {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
 }
