@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MerkUb</title>
+    <link href="assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+</link>
+</head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white py-4">
+            <div class="container">
+                <div class="col-3"> 
+                    <a href="/home.html"><img src="assets/images/merkublogo.svg" alt=""></a>                    
+                </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="d-flex flex-column flex-md-row py-4 justify-content-around align-items-center w-100 gap-2">
+                    <a href="home.html" class="text-gray-1 fw-semibold text-decoration-none text-decoration-underline-custom">Home</a>
+                    <a href="ourPlans.html" class="text-gray-1 fw-semibold text-decoration-none text-decoration-underline-custom">Our plans</a>
+                    <a href="ourProcess.html" class="text-gray-1 fw-semibold text-decoration-none text-decoration-underline-custom">Our process</a>
+                    <a href="agencies.html" class="text-gray-1 fw-semibold text-decoration-none text-decoration-underline-custom">Agencies</a>
+                    <a href="faqs.html" class="text-gray-1 fw-semibold text-decoration-none text-decoration-underline-custom">FAQs</a>
+                    <div>                    
+                        <button type="button" class="btn bg-yellow-1 fw-bold py-3 px-4 lh-1 rounded-custom-buttom">Start a free trial</button>
+                        <img class="ps-3" src="assets/images/iconsearch.svg" alt="">
+                    </div>
+                </div>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <main id="page-faqs">
+      <!-- SECCION 1 -->
+      <section>
+          <div class="d-flex bg-green-gradient position-relative" style="background-image: url('assets/images/bgimagegradient1.png'); background-repeat: no-repeat; background-size: cover;">
+              <div class="w-100 py-5" style="z-index: 1;">            
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-12 col-md-6 col-lg-7 d-flex flex-column justify-content-center px-4 px-md-3 px-lg-5">
+                              <h2 class="fw-bold fs-2 px-lg-5 mx-md-2 lh-sm text-white"> How Merkub packages <br> work?</h2>
+                              <p class="px-lg-5 mx-md-2 fs-6 fw-medium text-white">You can select one of the three packages we offer where you can send unlimited tasks to the support team, the ticket portal is available 24/7 to send your Hubspot activities and you can check the status of your activities and process them. </p>
+                          </div>
+                          <div class="col-12 col-md-6 col-lg-5 d-flex justify-content-center px-4 px-md-3 px-lg-5">                    
+                              <img class="img-fluid w-auto h-auto" src="assets/images/personafaqs.png" alt="">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!-- SECCION 2 NAV BAR Y CONTENIDO DINAMICO-->
+      <section class="container py-5 px-md-5">
+        <!-- Tab links -->
+        <div class="d-flex d-flex justify-content-center">
+          <div class="tab d-flex flex-column flex-md-row bg-gray-4 gap-2 gap-md-4 p-2">
+            <button class="tablinks fw-bold fs-6 text-gray-1" onclick="openMenuFaqs(event, 'Common')" id="defaultOpen">Common questions</button>
+            <button class="tablinks fw-bold fs-6 text-gray-1" onclick="openMenuFaqs(event, 'Marketing')">Marketing questions</button>
+            <button class="tablinks fw-bold fs-6 text-gray-1" onclick="openMenuFaqs(event, 'Sales')">Sales questions</button>
+            <button class="tablinks fw-bold fs-6 text-gray-1" onclick="openMenuFaqs(event, 'Services')">Services questions</button>
+          </div>
+        </div>
+
+        <!-- Tab content common questions -->
+        <div id="Common" class="tabcontent py-5">
+          <article class="d-flex flex-column pt-5 w-100">
+              <h2 class="text-gray-1 fw-bold text-center">Common questions</h2>
+              <!-- ITEM 1 -->
+              <details class="pt-3">
+                <summary class="text-gray-1 fw-bold text-left mb-0 fs-4 bg-gray-3 p-3" style="border-left: solid 8px var(--orange-1);">What type of task could I send?</summary>
+                <p class="text-gray-2 fs-6 fw-medium p-4 bg-white mb-0">You can sedn any type of task, for example workflows, setting new notifications, creating a new form, refreshing your webpage, or change pipelines from services or sales.Nevertheless, this depends on the package you selected.</p>
+              </details>
+              <!-- ITEM 2 -->
+              <details>
+                <summary class="text-gray-1 fw-bold text-left mb-0 fs-4 bg-gray-3 p-3" style="border-left: solid 8px var(--orange-1);">What Hubspot services we cover?</summary>
+                <p class="text-gray-2 fs-6 fw-medium p-4 bg-white mb-0">We cover all the Hubspot environment, we can acompany from Onboarding, helping your company to set and understand the process on Hubspot, to create new processes and optimize the old processes you have. On the other hand, we also cover all the Hubspot Hubs, sales, marketing and services.</p>
+              </details>   
+              <!-- ITEM 3 -->
+              <details>
+                <summary class="text-gray-1 fw-bold text-left mb-0 fs-4 bg-gray-3 p-3" style="border-left: solid 8px var(--orange-1);">Why hire an Onboarding service?</summary>
+                <p class="text-gray-2 fs-6 fw-medium p-4 bg-white mb-0">Because you don't have enough time to learn or set up your marketing, sales and services processes, since you need to be focused on your business. This is why, is better to ensure this process through experts who get the most out of Hubspot and your sales method.</p>
+              </details>     
+              <!-- ITEM 4 -->
+              <details>
+                <summary class="text-gray-1 fw-bold text-left mb-0 fs-4 bg-gray-3 p-3" style="border-left: solid 8px var(--orange-1);">Does my team also needs to work on Hubspot?</summary>
+                <p class="text-gray-2 fs-6 fw-medium p-4 bg-white mb-0">We will perform all the automation and set up processes on Hubspot for you. Nevertheless, we will need from you and your team some feedback and ideas that they can give us, in order to create the perfect CRM for your business and boost it to another level.</p>
+              </details>       
+              <!-- ITEM 5 -->
+              <details>
+                <summary class="text-gray-1 fw-bold text-left mb-0 fs-4 bg-gray-3 p-3" style="border-left: solid 8px var(--orange-1);">How long does an Onboarding process take?</summary>
+                <p class="text-gray-2 fs-6 fw-medium p-4 bg-white mb-0">The Onboarding process does not have an established time, since every marketing, sales and services process is different in each company. Therefore, it is necessary to make a unique schedule in each Onboarding process.</p>
+              </details>  
+              <!-- ITEM 6 -->
+              <details>
+                <summary class="text-gray-1 fw-bold text-left mb-0 fs-4 bg-gray-3 p-3" style="border-left: solid 8px var(--orange-1);">How is an Onboarding process?</summary>
+                <p class="text-gray-2 fs-6 fw-medium p-4 bg-white mb-0">Our Onboarding process consists of creating and setting up all the processes </p>
+              </details>      
+          </article>
+        </div>
+        <!-- Tab content Marketing questions -->
+        <div id="Marketing" class="tabcontent py-5">
+          <article class="d-flex flex-column pt-5 w-100">
+              <h2 class="text-gray-1 fw-bold text-center">Marketing questions</h2>
+              <!-- ITEM 1 -->
+              <details class="pt-3">
+                <summary class="text-gray-1 fw-bold text-left mb-0 fs-4 bg-gray-3 p-3" style="border-left: solid 8px var(--orange-1);">What's included in the Marketing hub?</summary>
+                <p class="text-gray-2 fs-6 fw-medium p-4 bg-white mb-0">In the marketing hub, we can set up for you landing pages, forms, emails, workflows and more. Also, we check and give you feedback about your current process.</p>
+              </details>
+              <!-- ITEM 2 -->
+              <details>
+                <summary class="text-gray-1 fw-bold text-left mb-0 fs-4 bg-gray-3 p-3" style="border-left: solid 8px var(--orange-1);">What happens if I use Wordpress?</summary>
+                <p class="text-gray-2 fs-6 fw-medium p-4 bg-white mb-0">Don't worry, we can manage Wordpress too and make integrations with Hubspot, in order to send and receive information. We can also install or embed codes for CTA's or forms and more.</p>
+              </details>   
+              <!-- ITEM 3 -->
+              <details>
+                <summary class="text-gray-1 fw-bold text-left mb-0 fs-4 bg-gray-3 p-3" style="border-left: solid 8px var(--orange-1);">Do you provide content?</summary>
+                <p class="text-gray-2 fs-6 fw-medium p-4 bg-white mb-0">No, apologies, Merkub is not a marketing agency, we charge for your repetitive activities to give you time for the important things in your company.</p>
+              </details>  
+              <!-- ITEM 4 -->
+              <details>
+                <summary class="text-gray-1 fw-bold text-left mb-0 fs-4 bg-gray-3 p-3" style="border-left: solid 8px var(--orange-1);">Do you help me with the inbound strategy?</summary>
+                <p class="text-gray-2 fs-6 fw-medium p-4 bg-white mb-0">No, as said before, Merkub is not a marketing agency, so we only take care of your repetitive tasks.</p>
+              </details> 
+              <!-- ITEM 5 -->
+              <details>
+                <summary class="text-gray-1 fw-bold text-left mb-0 fs-4 bg-gray-3 p-3" style="border-left: solid 8px var(--orange-1);">Can I migrate my contacts database?</summary>
+                <p class="text-gray-2 fs-6 fw-medium p-4 bg-white mb-0">Yes, we help you with your database migration form anywhere, we could either maket it through export or integrations.</p>
+              </details>     
+              <!-- ITEM 6 -->
+              <details>
+                <summary class="text-gray-1 fw-bold text-left mb-0 fs-4 bg-gray-3 p-3" style="border-left: solid 8px var(--orange-1);">How long does it take to set up the Marketing hub?</summary>
+                <p class="text-gray-2 fs-6 fw-medium p-4 bg-white mb-0">We can do it as quickly as possible, nevertheless all depends on how fast we understand your current marketing processes, since every company has a different marketing development and these must be adapted to the CRM.</p>
+              </details>
+          </article>
+        </div>
+        <!-- Tab content Sales questions -->
+        <div id="Sales" class="tabcontent py-5">
+          <article class="d-flex flex-column pt-5 w-100">
+              <h2 class="text-gray-1 fw-bold text-center">Sales questions</h2>
+              <!-- ITEM 1 -->
+              <details class="pt-3">
+                <summary class="text-gray-1 fw-bold text-left mb-0 fs-4 bg-gray-3 p-3" style="border-left: solid 8px var(--orange-1);">Do you help me to automate my sales pipeline?</summary>
+                <p class="text-gray-2 fs-6 fw-medium p-4 bg-white mb-0">Sure, we can create different workflows, in order to simplify your sales process.</p>
+              </details>
+              <!-- ITEM 2 -->
+              <details>
+                <summary class="text-gray-1 fw-bold text-left mb-0 fs-4 bg-gray-3 p-3" style="border-left: solid 8px var(--orange-1);">Could you set up my new sales pipeline?</summary>
+                <p class="text-gray-2 fs-6 fw-medium p-4 bg-white mb-0">Of course! Give us your pipeline stages and what we do is create them for you.</p>
+              </details>   
+              <!-- ITEM 3 -->
+              <details>
+                <summary class="text-gray-1 fw-bold text-left mb-0 fs-4 bg-gray-3 p-3" style="border-left: solid 8px var(--orange-1);">Can you make integrations with other apps?</summary>
+                <p class="text-gray-2 fs-6 fw-medium p-4 bg-white mb-0">In Merkub we know that the sales team needs to handle different apps or softwares every day, that's why we can connect them with many applications like calendars, calls, meetings and more. </p>
+              </details>  
+              <!-- ITEM 4 -->
+              <details>
+                <summary class="text-gray-1 fw-bold text-left mb-0 fs-4 bg-gray-3 p-3" style="border-left: solid 8px var(--orange-1);">Could you create new teams or users for me?</summary>
+                <p class="text-gray-2 fs-6 fw-medium p-4 bg-white mb-0">Yes, we certainly can create new users, add them to different teams and set up the necessary permissions for them.</p>
+              </details> 
+              <!-- ITEM 5 -->
+              <details>
+                <summary class="text-gray-1 fw-bold text-left mb-0 fs-4 bg-gray-3 p-3" style="border-left: solid 8px var(--orange-1);">Can you help me with my sales strategy?</summary>
+                <p class="text-gray-2 fs-6 fw-medium p-4 bg-white mb-0">No, Merkub is not a marketing agency so we can't give you advice on your sales process.</p>
+              </details>     
+              <!-- ITEM 6 -->
+              <details>
+                <summary class="text-gray-1 fw-bold text-left mb-0 fs-4 bg-gray-3 p-3" style="border-left: solid 8px var(--orange-1);">How long does it take to set up the Sales hub?</summary>
+                <p class="text-gray-2 fs-6 fw-medium p-4 bg-white mb-0">We can do it as quickly as possible, nevertheless all depends on how fast we understand your current sales process, since every company has different stages of sales and these must be adapted to the CRM.</p>
+              </details>
+          </article>
+        </div>
+        <!-- Tab content Services questions -->
+        <div id="Services" class="tabcontent py-5">
+          <article class="d-flex flex-column pt-5 w-100">
+              <h2 class="text-gray-1 fw-bold text-center">Services questions</h2>
+              <!-- ITEM 1 -->
+              <details class="pt-3">
+                <summary class="text-gray-1 fw-bold text-left mb-0 fs-4 bg-gray-3 p-3" style="border-left: solid 8px var(--orange-1);">Could you set up my new service pipeline?</summary>
+                <p class="text-gray-2 fs-6 fw-medium p-4 bg-white mb-0">Totally, we can make all your pipeline, we only need to know what are the stages you have in mind.</p>
+              </details>
+              <!-- ITEM 2 -->
+              <details>
+                <summary class="text-gray-1 fw-bold text-left mb-0 fs-4 bg-gray-3 p-3" style="border-left: solid 8px var(--orange-1);">Could you set up my inbox?</summary>
+                <p class="text-gray-2 fs-6 fw-medium p-4 bg-white mb-0">Yes, you just need to give us access to the account you need to connect and we set it up for you.</p>
+              </details>   
+              <!-- ITEM 3 -->
+              <details>
+                <summary class="text-gray-1 fw-bold text-left mb-0 fs-4 bg-gray-3 p-3" style="border-left: solid 8px var(--orange-1);">If I need a ticket form, can you make it?</summary>
+                <p class="text-gray-2 fs-6 fw-medium p-4 bg-white mb-0">Sure, you just need to tell us in what fields you need the form and we can create it for you.</p>
+              </details>  
+              <!-- ITEM 4 -->
+              <details>
+                <summary class="text-gray-1 fw-bold text-left mb-0 fs-4 bg-gray-3 p-3" style="border-left: solid 8px var(--orange-1);">Do you help me with my services strategy?</summary>
+                <p class="text-gray-2 fs-6 fw-medium p-4 bg-white mb-0">No, Merkub is not an agency, so we can't give you advice on your services process.</p>
+              </details> 
+          </article>
+        </div>
+      </section>
+
+      <!-- SECCION 3 BANNER -->
+      <section>
+          <div class="d-flex bg-green-gradient position-relative" style="background-image: url('/assets/images/bgimagegradient1.png'); background-repeat: no-repeat; background-size: cover;">
+            <div class="w-100 py-4 px-3 px-lg-5" style="z-index: 1;">
+              <div class="container py-3">
+                <h2 class="text-center fw-bold text-white pb-4 mb-0">Do you have more questions?</h2>
+                <div class="d-flex justify-content-center">                        
+                <a class="btn bg-yellow-1 fw-bold py-3 px-4 lh-1 rounded-custom-buttom">Book a discovery call</a>
+              </div>
+            </div>
+          </div>
+      </section>
+    </main>
+    <footer>
+        <div class="bg-gray-1 py-5">
+          <div class="container py-2">
+            <div class="row align-items-center">
+              <div class="col-12 col-md-4 d-flex justify-content-center">
+                <a href="home.html"><img src="assets/images/merkublogodarkmode.svg" alt="" /></a>
+              </div>
+              <div class="col-12 col-md-8">
+                <div
+                  class="d-flex flex-column flex-md-row py-4 justify-content-around align-items-center w-100"
+                >
+                  <a
+                    href="home.html"
+                    class="text-white fw-semibold text-decoration-none text-decoration-underline-custom-2"
+                    >Home</a
+                  >
+                  <a
+                    href="ourPlans.html"
+                    class="text-white fw-semibold text-decoration-none text-decoration-underline-custom-2"
+                    >Our plans</a
+                  >
+                  <a
+                    href="ourProcess.html"
+                    class="text-white fw-semibold text-decoration-none text-decoration-underline-custom-2"
+                    >Our process</a
+                  >
+                  <a
+                    href="agencies.html"
+                    class="text-white fw-semibold text-decoration-none text-decoration-underline-custom-2"
+                    >Agencies</a
+                  >
+                  <a
+                    href="faqs.html"
+                    class="text-white fw-semibold text-decoration-none text-decoration-underline-custom-2"
+                    >FAQs</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+    <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
+
+
+    <script>
+      // CODIGO JAVASCRIPT PARA NAVBAR
+      function openMenuFaqs(evt, cityName) {
+        // Declarar variables
+        var i, tabcontent, tablinks;
+
+        // se obtiene los elementos con la clase tabcontent y se oculta los items
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+
+        // se obtiene los elementos con la clase tablinks y se remplaza la clase active por vacio
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // se muestra la tab seleccionada y se activa el boton
+        document.getElementById(cityName).style.display = "flex";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+    <script>
+      // Se obtiene el elemento con el id="defaultOpen" y se lo activa por defecto
+      document.getElementById("defaultOpen").click();
+    </script>
+  </body>
+</html>
+
