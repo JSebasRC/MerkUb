@@ -119,6 +119,14 @@ body {
     font-size: 12px;
 }
 
+.line-orange {
+    height: 4px;
+    max-width: 80px;
+    width: 100%;
+    background-color: var(--orange-1);
+    display: flex;
+    justify-content: center;
+}
 .text-decoration-underline-custom:hover {
     text-decoration: underline 4px var(--orange-1) !important;
     text-underline-offset: 4px;
@@ -265,4 +273,10 @@ body {
 }
 #page-faqs details[open] summary::before { 
     content:"\f068"; 
+}
+
+/* ESTILOS PAGINA OUR PLANS */
+
+.border-table-custom {
+    border-right: solid 1px var(--gray-2);
 }
