@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/fonts/stylesheet.css">
 </head>
   <body>
-    <header>
+    <header class="sticky-top">
         <nav class="navbar navbar-expand-lg bg-white py-4">
             <div class="container">
                 <div class="col-3"> 
@@ -19,7 +19,7 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="d-flex flex-column flex-md-row py-4 justify-content-around align-items-center w-100 gap-2">
+                <div class="d-flex flex-column flex-md-row py-1 justify-content-around align-items-center w-100 gap-2">
                     <a href="home.html" class="text-gray-1 fw-semibold text-decoration-none text-decoration-underline-custom">Home</a>
                     <a href="ourPlans.html" class="text-gray-1 fw-semibold text-decoration-none text-decoration-underline-custom">Our plans</a>
                     <a href="ourProcess.html" class="text-gray-1 fw-semibold text-decoration-none text-decoration-underline-custom">Our process</a>
@@ -56,13 +56,16 @@
             </div>
         </section>
         <!-- SECCION 2 -->
-        <section>
+        <section class="bg-gray-3">
             <div class="container py-5">
                 <div class="d-flex flex-column justify-content-center align-items-center py-4">
-                    <p class="fw-bold fs-4 text-gray-1 pt-3 text-center">We work for your clients on your behalf, so you don't <br> have to worry about a thing.</p>
-                    <p class="fw-medium text-gray-1 py-3 text-center">If you like to save the costs from hiring an independent developer don't hesitate on calling us. <br> We have experience with many agencies and a vast set of certifications. </p>
+                    <div class="d-flex flex-column align-items-center pb-3">
+                        <h2 class="fw-bold text-gray-1 pt-2 text-center">We work for your clients on your behalf, so you don't <br> have to worry about a thing.</h2>
+                        <div class="line-orange"></div>
+                    </div>
+                    <p class="fw-medium text-gray-1 text-center">If you like to save the costs from hiring an independent developer don't hesitate on calling us. <br> We have experience with many agencies and a vast set of certifications. </p>
                 </div>
-                <div class="d-flex flex-wrap justify-content-center px-5 gap-4">     
+                <div class="d-flex flex-wrap justify-content-center px-5 gap-4 pb-4">     
                     <img src="assets/images/logoincolmotos.svg" alt="">                   
                     <img src="assets/images/logosumatec.svg" alt="">
                     <img src="assets/images/logoinducascos.svg" alt="">
@@ -75,12 +78,15 @@
         <!-- SECCION 3 -->
         <section>
             <div class="bg-white">
-                <div class="d-flex flex-column justify-content-center align-items-center py-4">
-                    <p class="fw-bold fs-4 text-gray-1 pt-3 text-center">What does Merkub offers you</p>
-                    <p class="fw-medium text-gray-1 py-3 text-center">These are some of the most popular tasks that we get done for you</p>
+                <div class="d-flex flex-column justify-content-center align-items-center pt-5">
+                    <div class="d-flex flex-column align-items-center pb-4 pt-3">
+                        <h2 class="fw-bold text-gray-1 pt-2 text-center">What does Merkub offers you</h2>
+                        <div class="line-orange"></div>
+                    </div>
+                    <p class="fw-medium text-gray-1 text-center mb-0">These are some of the most popular tasks that we get done for you</p>
                 </div>
-                <div class="container px-lg-5">
-                    <div class="d-flex flex-wrap gap-4 py-3 py-md-5 justify-content-center px-5">
+                <div class="container px-lg-5 pb-md-5">
+                    <div class="d-flex flex-wrap gap-4 py-3 py-md-4 justify-content-center px-5 pb-2">
                         <div class="cards shadow-custom rounded-md p-4 text-gray-1">
                             <div class="d-flex justify-content-center align-items-center bg-gray-6 rounded-circle icon-cards shadow-custom rounded-md p-2 mb-2">
                                 <img class="" src="assets/images/iconcardhome1.svg" alt="">
@@ -122,51 +128,54 @@
         </section>
         <!-- SECCION 4 -->
         <section class="bg-gray-3 pb-5">
-            <div>
-                <div class="container d-flex justify-content-center">
-                    <div class="container-cards py-3 py-md-5">
-                        <div class="d-flex align-items-center justify-content-center justify-content-md-start py-4"> <h2 class="text-gray-1 fw-bold">Why choose <br> us?</h2></div>
-                        <div class="cards shadow-custom rounded-md p-4 text-gray-1">
-                            <div class="d-flex justify-content-center align-items-center bg-gray-6 rounded-circle icon-cards shadow-custom rounded-md p-2 mb-2">
-                                <img class="" src="assets/images/iconcardhome1.svg" alt="">
-                            </div>
-                            <p class="fw-bold mb-2">Manage costs</p>
-                            <p class="fs-8 lh-sm pb-2 opacity-60">Save hiring and trainning costs, while you focus on growing your business</p>
+            <div class="container d-flex justify-content-center pt-md-5">
+                <div class="container-cards py-3 pt-md-4">
+                    <div class="d-flex align-items-center justify-content-center justify-content-md-start py-4"> 
+                        <div class="d-flex flex-column align-items-start pb-4">
+                            <h2 class="text-gray-1 fw-bold">Why choose <br> us?</h2>
+                            <div class="line-orange"></div>
                         </div>
-                        <div class="cards shadow-custom rounded-md p-4 text-gray-1">
-                            <div class="d-flex justify-content-center align-items-center bg-gray-6 rounded-circle icon-cards shadow-custom rounded-md p-2 mb-2">
-                                <img class="" src="assets/images/iconcardhome1.svg" alt="">
-                            </div>
-                            <p class="fw-bold mb-2">Focus on sales and strategy</p>
-                            <p class="fs-8 lh-sm pb-2 opacity-60">Scale your business by focusing on your sales and strategy process, than instead on Hubspot tasks</p>
+                    </div>
+                    <div class="cards shadow-custom rounded-md p-4 text-gray-1">
+                        <div class="d-flex justify-content-center align-items-center bg-gray-6 rounded-circle icon-cards shadow-custom rounded-md p-2 mb-2">
+                            <img class="" src="assets/images/iconcardhome1.svg" alt="">
                         </div>
-                        <div class="cards shadow-custom rounded-md p-4 text-gray-1">
-                            <div class="d-flex justify-content-center align-items-center bg-gray-6 rounded-circle icon-cards shadow-custom rounded-md p-2 mb-2">
-                                <img class="" src="assets/images/iconcardhome1.svg" alt="">
-                            </div>
-                            <p class="fw-bold mb-2">Trainning</p>
-                            <p class="fs-8 lh-sm pb-2 opacity-60">Instead of trainning new employees, which is exhausting and time consuming, get the best personal do what you need</p>
-                        </div>  
-                        <div class="cards shadow-custom rounded-md p-4 text-gray-1">
-                            <div class="d-flex justify-content-center align-items-center bg-gray-6 rounded-circle icon-cards shadow-custom rounded-md p-2 mb-2">
-                                <img class="" src="assets/images/iconcardhome1.svg" alt="">
-                            </div>
-                            <p class="fw-bold mb-2">Increase bandwitch</p>
-                            <p class="fs-8 lh-sm pb-2 opacity-60">In order to increase your Hubspot bandwitch you need someone to manage all of your tasks</p>
+                        <p class="fw-bold mb-2">Manage costs</p>
+                        <p class="fs-8 lh-sm pb-2 opacity-60">Save hiring and trainning costs, while you focus on growing your business</p>
+                    </div>
+                    <div class="cards shadow-custom rounded-md p-4 text-gray-1">
+                        <div class="d-flex justify-content-center align-items-center bg-gray-6 rounded-circle icon-cards shadow-custom rounded-md p-2 mb-2">
+                            <img class="" src="assets/images/iconcardhome1.svg" alt="">
                         </div>
-                        <div class="cards shadow-custom rounded-md p-4 text-gray-1">
-                            <div class="d-flex justify-content-center align-items-center bg-gray-6 rounded-circle icon-cards shadow-custom rounded-md p-2 mb-2">
-                                <img class="" src="assets/images/iconcardhome1.svg" alt="">
-                            </div>
-                            <p class="fw-bold mb-2">Manage quality</p>
-                            <p class="fs-8 lh-sm pb-2 opacity-60">If you want to deliver great quality to your clients, you're in the right place, since freelance quality is often hard to find or non-existent.</p>
+                        <p class="fw-bold mb-2">Focus on sales and strategy</p>
+                        <p class="fs-8 lh-sm pb-2 opacity-60">Scale your business by focusing on your sales and strategy process, than instead on Hubspot tasks</p>
+                    </div>
+                    <div class="cards shadow-custom rounded-md p-4 text-gray-1">
+                        <div class="d-flex justify-content-center align-items-center bg-gray-6 rounded-circle icon-cards shadow-custom rounded-md p-2 mb-2">
+                            <img class="" src="assets/images/iconcardhome1.svg" alt="">
                         </div>
+                        <p class="fw-bold mb-2">Trainning</p>
+                        <p class="fs-8 lh-sm pb-2 opacity-60">Instead of trainning new employees, which is exhausting and time consuming, get the best personal do what you need</p>
+                    </div>  
+                    <div class="cards shadow-custom rounded-md p-4 text-gray-1">
+                        <div class="d-flex justify-content-center align-items-center bg-gray-6 rounded-circle icon-cards shadow-custom rounded-md p-2 mb-2">
+                            <img class="" src="assets/images/iconcardhome1.svg" alt="">
+                        </div>
+                        <p class="fw-bold mb-2">Increase bandwitch</p>
+                        <p class="fs-8 lh-sm pb-2 opacity-60">In order to increase your Hubspot bandwitch you need someone to manage all of your tasks</p>
+                    </div>
+                    <div class="cards shadow-custom rounded-md p-4 text-gray-1">
+                        <div class="d-flex justify-content-center align-items-center bg-gray-6 rounded-circle icon-cards shadow-custom rounded-md p-2 mb-2">
+                            <img class="" src="assets/images/iconcardhome1.svg" alt="">
+                        </div>
+                        <p class="fw-bold mb-2">Manage quality</p>
+                        <p class="fs-8 lh-sm pb-2 opacity-60">If you want to deliver great quality to your clients, you're in the right place, since freelance quality is often hard to find or non-existent.</p>
                     </div>
                 </div>
             </div>
             <!-- SECCION 4.1 -->
             <section>
-                <div class="container px-lg-5 py-4 py-lg-5">
+                <div class="container px-lg-5 py-2">
                     <div class="d-flex flex-column">
                         <p class="fw-bold text-gray-1 fs-6 text-center">You don't have to worry about your fixed capacity, we manage your tasks</p>
                         <div class="d-flex justify-content-center align-items-center">

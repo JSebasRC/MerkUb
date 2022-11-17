@@ -11,7 +11,7 @@
 </link>
 </head>
   <body>
-    <header>
+    <header class="sticky-top">
       <nav class="navbar navbar-expand-lg bg-white py-4">
           <div class="container">
               <div class="col-3"> 
@@ -21,7 +21,7 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <div class="d-flex flex-column flex-md-row py-4 justify-content-around align-items-center w-100 gap-2">
+              <div class="d-flex flex-column flex-md-row py-1 justify-content-around align-items-center w-100 gap-2">
                   <a href="home.html" class="text-gray-1 fw-semibold text-decoration-none text-decoration-underline-custom">Home</a>
                   <a href="ourPlans.html" class="text-gray-1 fw-semibold text-decoration-none text-decoration-underline-custom">Our plans</a>
                   <a href="ourProcess.html" class="text-gray-1 fw-semibold text-decoration-none text-decoration-underline-custom">Our process</a>
@@ -42,42 +42,53 @@
         <!-- Tab links -->
         <div class="d-flex d-flex justify-content-center">
           <div class="tab d-flex flex-column flex-md-row bg-gray-4 gap-2 gap-md-4 p-2">
-            <button class="tablinks fw-bold fs-6 text-gray-1" onclick="openMenuFaqs(event, 'Onboarding')" id="defaultOpen">Onboarding services</button>
-            <button class="tablinks fw-bold fs-6 text-gray-1" onclick="openMenuFaqs(event, 'Unlimited')">Unlimited tasks</button>
-            <button class="tablinks fw-bold fs-6 text-gray-1" onclick="openMenuFaqs(event, 'Integrations')">Integrations</button>
-            <button class="tablinks fw-bold fs-6 text-gray-1" onclick="openMenuFaqs(event, 'Add-ons')">Add-ons/ other services</button>
+            <button class="tablinks fw-bold fs-6 text-gray-1" onclick="openMenuOurPlans(event, 'Onboarding')" >Onboarding services</button>
+            <button class="tablinks fw-bold fs-6 text-gray-1" onclick="openMenuOurPlans(event, 'Unlimited')" id="defaultOpen">Unlimited tasks</button>
+            <button class="tablinks fw-bold fs-6 text-gray-1" onclick="openMenuOurPlans(event, 'Integrations')">Integrations</button>
+            <button class="tablinks fw-bold fs-6 text-gray-1" onclick="openMenuOurPlans(event, 'Add-ons')">Add-ons/ other services</button>
           </div>
         </div>
 
         <!-- Tab content Onboarding -->
         <div id="Onboarding" class="tabcontent py-5">
           <section class="d-flex flex-column pt-5 w-100">
-            <h2 class="text-gray-1 fw-bold text-center">How Onboarding works in Hubspot?</h2>
+            <div class="d-flex flex-column align-items-center pb-4">
+              <h2 class="text-gray-1 fw-bold mb-1">How Onboarding works in Hubspot?</h2>
+              <div class="line-orange"></div>
+            </div>
             <p class="text-gray-2 text-center fs-6 fw-medium"><span class="fw-bold"> We share our experience with you to set your process for marketing, sales, and services.</span> <br> We make easier your journey through Hubspot and guide you to explore your platform and <br> started the best way possible.</p>
             <div class="row pt-5">
-              <div class="col-3 px-4"></div>
-              <div class="d-flex justify-content-center align-items-center col-3 px-4">
+              <div class="col-12 col-lg-3 px-4"></div>
+              <div class="d-flex justify-content-center align-items-center col-12 col-lg-3 px-4">
                 <div class="d-flex flex-column text-center">
-                  <h4 class="fw-bold text-gray-1">Marketing Hub Onboarding</h4>
-                  <div class="line-orange"></div>
-                  <p class="fw-bold text-gray-1 mb-0 mt-4">From </p>
+                  <div class="d-flex flex-column align-items-center">
+                    <h4 class="text-gray-1 fw-bold mb-1">Marketing Hub Onboarding</h4>
+                    <div class="line-orange"></div>
+                  </div>
+                  <p class="fw-bold text-gray-1 mb-0 mt-4">From</p>
                   <h2 class="text-orange-1 fw-bold mb-4">$720/month</h2>
                   <p class="text-gray-1 fw-medium fs-6 text-start">We set all your marketing processes in Hubspot through Marketing Hub, we could make for you, a landing page, forms, chatbots, emails, workflows, call to action, integrations, and more.</p>
                   <p class="text-gray-1 fw-bold fs-6 text-start"> With this, your marketing team is going to achieve every marketing goal.</p>
                 </div>
               </div>
-              <div class="d-flex justify-content-center align-items-center col-3 px-4">
+              <div class="d-flex justify-content-center align-items-center col-12 col-lg-3 px-4">
                 <div class="d-flex flex-column text-center">
-                  <h4 class="fw-bold text-gray-1">Sales Hub Onboarding</h4>
+                  <div class="d-flex flex-column align-items-center">
+                    <h4 class="text-gray-1 fw-bold mb-1">Sales Hub Onboarding</h4>
+                    <div class="line-orange"></div>
+                  </div>
                   <p class="fw-bold text-gray-1 mb-0 mt-4">From </p>
                   <h2 class="text-orange-1 fw-bold mb-4">$720/month</h2>
                   <p class="text-gray-1 fw-medium fs-6 text-start">We can set for you the sales pipeline, automated notifications, create different sales teams, sales goals, sequences, integrations, reports, and more.</p>
                   <p class="text-gray-1 fw-bold fs-6 text-start"> Therefore you keep all your sales in one place to have major control and check the numbers in real time.</p>
                 </div>
               </div>
-              <div class="d-flex justify-content-center align-items-center col-3 px-4">
+              <div class="d-flex justify-content-center align-items-center col-12 col-lg-3 px-4">
                 <div class="d-flex flex-column text-center">
-                  <h4 class="fw-bold text-gray-1">Services Hub Onboarding</h4>
+                  <div class="d-flex flex-column align-items-center">
+                    <h4 class="text-gray-1 fw-bold mb-1">Services Hub Onboarding</h4>
+                    <div class="line-orange"></div>
+                  </div>
                   <p class="fw-bold text-gray-1 mb-0 mt-4">From </p>
                   <h2 class="text-orange-1 fw-bold mb-4">$720/month</h2>
                   <p class="text-gray-1 fw-medium fs-6 text-start">We set the service pipeline customer portal, forms, chatbot, inboxes, reports and more.</p>
@@ -87,37 +98,272 @@
             </div>
             <!-- TABLA -->
             <div class="row bg-gray-3">
-              <div class="col-3 d-flex align-items-center justify-content-end py-2 border-table-custom"><p class="text-gray-2 fw-semibold fs-6 mb-0">Creation of Buyer persona</p></div>
-              <div class="col-3 d-flex align-items-center justify-content-center border-table-custom"><img src="/assets/images/iconcomprobado.svg" alt=""></div>
-              <div class="col-3 d-flex align-items-center justify-content-center border-table-custom"><img src="/assets/images/iconcomprobado.svg" alt=""></div>
-              <div class="col-3"></div>
+              <div class="col-6 col-md-3 d-flex align-items-center text-end py-2 border-table-custom"><p class="text-gray-2 fw-semibold fs-6 mb-0">Creation of Buyer persona</p></div>
+              <div class="col-2 col-md-3 d-flex align-items-center justify-content-center border-table-custom"><img src="/assets/images/iconcomprobado.svg" alt=""></div>
+              <div class="col-2 col-md-3 d-flex align-items-center justify-content-center border-table-custom"><img src="/assets/images/iconcomprobado.svg" alt=""></div>
+              <div class="col-2 col-md-3 m-0 p-0"></div>
             </div>
             <div class="row bg-white">
-              <div class="col-3 d-flex align-items-center justify-content-end py-2 border-table-custom"><p class="text-gray-2 fw-semibold fs-6 mb-0">Database segmentation</p></div>
-              <div class="col-3 d-flex align-items-center justify-content-center border-table-custom"><img src="/assets/images/iconcomprobado.svg" alt=""></div>
-              <div class="col-3 d-flex align-items-center justify-content-center border-table-custom"><img src="/assets/images/iconcomprobado.svg" alt=""></div>
-              <div class="col-3 d-flex align-items-center justify-content-center"><img src="/assets/images/iconcomprobado.svg" alt=""></div>
+              <div class="col-6 col-md-3 d-flex align-items-center text-end py-2 border-table-custom"><p class="text-gray-2 fw-semibold fs-6 mb-0">Database segmentation</p></div>
+              <div class="col-2 col-md-3 d-flex align-items-center justify-content-center border-table-custom"><img src="/assets/images/iconcomprobado.svg" alt=""></div>
+              <div class="col-2 col-md-3 d-flex align-items-center justify-content-center border-table-custom"><img src="/assets/images/iconcomprobado.svg" alt=""></div>
+              <div class="col-2 col-md-3 d-flex align-items-center justify-content-center m-0 p-0"><img src="/assets/images/iconcomprobado.svg" alt=""></div>
             </div>
             <!-- BOTONES GET STARTED -->
             <div class="row pt-4">
-              <div class="col-3"></div>
-              <div class="d-flex justify-content-center align-items-center col-3">
-                <a class="btn bg-yellow-1 fw-bold py-3 px-4 lh-1 rounded-custom-buttom">Get started</a>
+              <div class="col-6 col-md-3"></div>
+              <div class="d-flex justify-content-center align-items-center col-2 col-md-3">
+                <a class="btn bg-yellow-1 fw-bold py-1 px-2 py-md-3 px-md-4 lh-1 rounded-custom-buttom"> Get <span class="d-none d-md-inline">started</span></a>
               </div>
-              <div class="d-flex justify-content-center align-items-center col-3">
-                <a class="btn bg-yellow-1 fw-bold py-3 px-4 lh-1 rounded-custom-buttom">Get started</a>
+              <div class="d-flex justify-content-center align-items-center col-2 col-md-3">
+                <a class="btn bg-yellow-1 fw-bold py-1 px-2 py-md-3 px-md-4 lh-1 rounded-custom-buttom"> Get <span class="d-none d-md-inline">started</span></a>
               </div>
-              <div class="d-flex justify-content-center align-items-center col-3">
-                <a class="btn bg-yellow-1 fw-bold py-3 px-4 lh-1 rounded-custom-buttom">Get started</a>
+              <div class="d-flex justify-content-center align-items-center col-2 col-md-3">
+                <a class="btn bg-yellow-1 fw-bold py-1 px-2 py-md-3 px-md-4 lh-1 rounded-custom-buttom"> Get <span class="d-none d-md-inline">started</span></a>
               </div>
             </div>
           </section>
         </div>
         <!-- Tab content Unlimited -->
         <div id="Unlimited" class="tabcontent py-5">
-            <article class="d-flex flex-column pt-5 w-100">
-                <h2 class="text-gray-1 fw-bold text-center">How Unlimited tasks work in Hubspot?</h2>
-            </article>
+          <section class="d-flex flex-column w-100">
+            <section class="d-flex flex-column pt-5 w-100">
+              <div class="d-flex flex-column align-items-center pb-4">
+                <h2 class="text-gray-1 fw-bold mb-1">How Unlimited tasks work in Hubspot?</h2>
+                <div class="line-orange"></div>
+              </div>
+              <p class="text-gray-2 text-center fs-6 fw-medium"><span class="fw-bold"> We share our experience with you to set your process for marketing, sales, and services. </span> <br> We make easier your journey through Hubspot and guide you to explode your platform and <br> started the best way possible.</p>
+              <div class="d-flex flex-column flex-lg-row pt-4 gap-3 justify-content-center align-self-center">
+                <!-- CARD Package one -->
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <div class="d-flex flex-column justify-content-start align-items-center bg-gray-3 h-100 px-3 py-3 rounded-md width-cards-ourplans">
+                    <div class="d-flex flex-column align-items-center">
+                      <h4 class="text-gray-1 fw-bold mb-1">Package one</h4>
+                      <div class="line-orange"></div>
+                    </div>
+                    <p class="fw-bold text-yellow-1 fs-6 mb-0 py-3">1 active task </p>
+                    <h2 class="text-orange-1 fw-bold mb-3">$790/month</h2>
+                    <ul class="text-gray-2 fw-semibold fs-8 m-0 p-0">
+                      <li 
+                        class="d-flex align-items-center justify-content-start pb-3 text-start"
+                      >
+                        <img class="pe-2" src="assets/images/iconarrow.svg" alt="">
+                        Submit your unlimited tasks You can send tasks about marketing, sales and services, but only have 1 active task at any time.
+                      </li>
+                      <li 
+                        class="d-flex align-items-center justify-content-start pb-3 text-start"
+                      >
+                        <img class="pe-2" src="assets/images/iconarrow.svg" alt="">
+                        asks or activities are going to be ready between 1 and 4 days.
+                      </li>
+                      <li 
+                      class="d-flex align-items-center justify-content-start pb-3 text-start"
+                      >
+                        <img class="pe-2" src="assets/images/iconarrow.svg" alt="">
+                        One meeting per month to check your activities and their status.
+                      </li>
+                      <li 
+                      class="d-flex align-items-center justify-content-start pb-3 text-start"
+                      >
+                        <img class="pe-2" src="assets/images/iconarrow.svg" alt="">
+                        Ideal for small companies or teams with low activity in Hubspot..
+                      </li>
+                    </ul>
+                  </div>
+                  <a href="" class="btn bg-yellow-1 fw-bold py-3 px-4 lh-1 rounded-custom-buttom my-4">Get started</a>
+                </div>
+                <!-- CARD Package TWO --> 
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <div class="d-flex flex-column justify-content-start align-items-center bg-green-3-card h-100 px-3 py-3 rounded-md width-cards-ourplans">
+                    <div class="d-flex flex-column align-items-center">
+                      <h4 class="text-gray-1 fw-bold mb-1">Package two</h4>
+                      <div class="line-orange"></div>
+                    </div>
+                    <p class="fw-bold text-yellow-1 fs-6 mb-0 py-3">3 active task </p>
+                    <h2 class="text-orange-1 fw-bold mb-3">$1.169/month</h2>
+                    <ul class="text-gray-2 fw-semibold fs-8 m-0 p-0">
+                      <li 
+                        class="d-flex align-items-center justify-content-start pb-3 text-start"
+                      >
+                        <img class="pe-2" src="assets/images/iconarrow.svg" alt="">
+                        Submit your unlimited tasks You can send tasks about marketing, sales and services, up to 3 active tasks at any time.
+                      </li>
+                      <li 
+                        class="d-flex align-items-center justify-content-start pb-3 text-start"
+                      >
+                        <img class="pe-2" src="assets/images/iconarrow.svg" alt="">
+                        Tasks or activities are going to be ready between 1 and 3 days.
+                      </li>
+                      <li 
+                      class="d-flex align-items-center justify-content-start pb-3 text-start"
+                      >
+                        <img class="pe-2" src="assets/images/iconarrow.svg" alt="">
+                        One meeting per month to check your activities and their status.
+                      </li>
+                      <li 
+                      class="d-flex align-items-center justify-content-start pb-3 text-start"
+                      >
+                        <img class="pe-2" src="assets/images/iconarrow.svg" alt="">
+                        Ideal for small-medium companies or teams with medium activity in Hubspot.
+                      </li>
+                      <li 
+                      class="d-flex align-items-center justify-content-start pb-3 text-start"
+                      >
+                        <img class="pe-2" src="assets/images/iconarrow.svg" alt="">
+                        Receive two reports created in Hubspot, by month.
+                      </li>
+                    </ul>
+                  </div>
+                  <a href="" class="btn bg-yellow-1 fw-bold py-3 px-4 lh-1 rounded-custom-buttom my-4">Get started</a>
+                </div>
+                <!-- CARD Package Three -->
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                  <div class="d-flex flex-column justify-content-start align-items-center text-white bg-green-2-gadiente-card h-100 px-3 py-3 rounded-md width-cards-ourplans">
+                    <div class="d-flex flex-column align-items-center">
+                      <h4 class="fw-bold mb-1">Package two</h4>
+                      <div class="line-orange"></div>
+                    </div>
+                    <p class="fw-bold fs-6 mb-0 py-3">3 active task </p>
+                    <h2 class="fw-bold mb-3">$1.742/month</h2>
+                    <ul class="fw-semibold fs-8 m-0 p-0">
+                      <li 
+                        class="d-flex align-items-center justify-content-start pb-3 text-start"
+                      >
+                        <img class="pe-2" src="assets/images/iconarrowwhite.svg" alt="">
+                        Submit your unlimited tasks You can send tasks about marketing, sales, services and CMS Hub,up to 8 active tasks at any time.
+                      </li>
+                      <li 
+                        class="d-flex align-items-center justify-content-start pb-3 text-start"
+                      >
+                        <img class="pe-2" src="assets/images/iconarrowwhite.svg" alt="">
+                        Tasks or activities are going to be ready between 1 and 2 days.
+                      </li>
+                      <li 
+                      class="d-flex align-items-center justify-content-start pb-3 text-start"
+                      >
+                        <img class="pe-2" src="assets/images/iconarrowwhite.svg" alt="">
+                        One meeting per month to check your activities and their status.
+                      </li>
+                      <li 
+                      class="d-flex align-items-center justify-content-start pb-3 text-start"
+                      >
+                        <img class="pe-2" src="assets/images/iconarrowwhite.svg" alt="">
+                        Ideal for small-medium companies or teams with medium activity in Hubspot.
+                      </li>
+                      <li 
+                      class="d-flex align-items-center justify-content-start pb-3 text-start"
+                      >
+                        <img class="pe-2" src="assets/images/iconarrowwhite.svg" alt="">
+                        Receive two reports created in Hubspot, by month.
+                      </li>
+                    </ul>
+                  </div>
+                  <a href="" class="btn bg-yellow-1 fw-bold py-3 px-4 lh-1 rounded-custom-buttom my-4">Get started</a>
+                </div>
+              </div>
+            </section>
+            <section class="d-flex flex-column py-5 w-100">
+              <div class="d-flex flex-column align-items-center py-5">
+                <h2 class="text-gray-1 fw-bold mb-1">Always included</h2>
+                <div class="line-orange"></div>
+              </div>
+              <div class="d-flex flex-wrap justify-content-center">
+                <div class="card-always-included-ourplans">
+                  <p class="text-center fs-6 text-gray-1 fw-semibold">Account manager to manage your request</p>
+                  <div class="bg-orange-1">
+                    <img class="d-flex align-items-center justify-content-center" src="/assets/images/iconaccountverified.svg" alt="">
+                  </div>
+                </div>
+                <div class="card-always-included-ourplans">
+                  <p class="text-center fs-6 text-gray-1 fw-semibold">Hubspot certificate experts</p>
+                  <div class="bg-green-3">
+                    <img class="d-flex align-items-center justify-content-center" src="/assets/images/iconaccountverified.svg" alt="">
+                  </div>
+                </div>
+                <div class="card-always-included-ourplans">
+                  <p class="text-center fs-6 text-gray-1 fw-semibold">Hubspot certificate experts</p>
+                  <div class="bg-yellow-1">
+                    <img class="d-flex align-items-center justify-content-center" src="/assets/images/iconaccountverified.svg" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex flex-wrap justify-content-center">
+                <div class="card-always-included-ourplans">
+                  <p class="text-center fs-6 text-gray-1 fw-semibold">Access to services <br> portal 24/7 </p>
+                  <div class="bg-green-4">
+                    <img class="d-flex align-items-center justify-content-center" src="/assets/images/iconaccountverified.svg" alt="">
+                  </div>
+                </div>
+                <div class="card-always-included-ourplans">
+                  <p class="text-center fs-6 text-gray-1 fw-semibold">Unlimited tasks</p>
+                  <div class="bg-orange-1">
+                    <img class="d-flex align-items-center justify-content-center" src="/assets/images/iconaccountverified.svg" alt="">
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- TABLA -->
+            <section>            
+              <div class="row table-header border-table-header">
+                <div class="col-3 d-flex align-items-center justify-content-start text-start py-2 ps-md-4"><p class="text-white fw-semibold fs-6 mb-0">Merkub Packages Features</p></div>
+                <div class="col-3 d-flex align-items-center justify-content-center text-center py-2"><p class="text-white fw-semibold fs-6 mb-0">Package one</p></div>
+                <div class="col-3 d-flex align-items-center justify-content-center text-center py-2"><p class="text-white fw-semibold fs-6 mb-0">Package two</p></div>
+                <div class="col-3 d-flex align-items-center justify-content-center text-center py-2"><p class="text-white fw-semibold fs-6 mb-0">Package three</p></div>
+              </div>
+              <div class="row bg-gray-3">
+                <div class="col-3 d-flex align-items-center text-end py-2 border-table-custom "><p class="text-gray-2 fw-semibold fs-6 mb-0">Account manager added</p></div>
+                <div class="col-3 d-flex align-items-center justify-content-center border-table-custom"><img src="/assets/images/iconcomprobado.svg" alt=""></div>
+                <div class="col-3 d-flex align-items-center justify-content-center border-table-custom"><img src="/assets/images/iconcomprobado.svg" alt=""></div>
+                <div class="col-3 m-0 p-0"></div>
+              </div>
+              <div class="row bg-white">
+                <div class="col-3 d-flex align-items-center text-end py-2 border-table-custom"><p class="text-gray-2 fw-semibold fs-6 mb-0">Weekly planner</p></div>
+                <div class="col-3 d-flex align-items-center justify-content-center border-table-custom"><img src="/assets/images/iconcomprobado.svg" alt=""></div>
+                <div class="col-3 d-flex align-items-center justify-content-center border-table-custom"><img src="/assets/images/iconcomprobado.svg" alt=""></div>
+                <div class="col-3 m-0 p-0"></div>
+              </div>
+              <div class="row bg-gray-3">
+                <div class="col-3 d-flex align-items-center text-end py-2 border-table-custom"><p class="text-gray-2 fw-semibold fs-6 mb-0">Weekly planner</p></div>
+                <div class="col-3 d-flex align-items-center justify-content-center text-center border-table-custom"><p class="text-gray-2 fw-semibold fs-6 mb-0">1 active task at any time</p></div>
+                <div class="col-3 d-flex align-items-center justify-content-center text-center border-table-custom"><p class="text-gray-2 fw-semibold fs-6 mb-0">3 active task at any time</p></div>
+                <div class="col-3 d-flex align-items-center  justify-content-center text-center"><p class="text-gray-2 fw-semibold fs-6 mb-0">8 active task at any time</p></div>
+              </div>
+              <div class="row table-header">
+                <div class="col-3 d-flex align-items-center justify-content-start text-start py-2 ps-md-4"><p class="text-white fw-semibold fs-6 mb-0">CRM Features</p></div>
+                <div class="col-3 d-flex align-items-center justify-content-center text-center py-2"><p class="text-white fw-semibold fs-6 mb-0">Package one</p></div>
+                <div class="col-3 d-flex align-items-center justify-content-center text-center py-2"><p class="text-white fw-semibold fs-6 mb-0">Package two</p></div>
+                <div class="col-3 d-flex align-items-center justify-content-center text-center py-2"><p class="text-white fw-semibold fs-6 mb-0">Package three</p></div>
+              </div>
+              <!-- BOTONES GET STARTED -->
+              <div class="row pt-4">
+                <div class="col-3"></div>
+                <div class="d-flex flex-column justify-content-center align-items-center col-3">
+                  <p class="fw-bold text-yellow-1 fs-8 mb-0 py-2 text-center d-md-none">1 active task </p>
+                  <p class="fw-bold text-yellow-1 fs-6 mb-0 py-2 text-center d-none d-md-inline">1 active task </p>
+                  <h6 class="text-orange-1 fw-bold mb-3 d-md-none text-center">$790 <br> month</h6>
+                  <h4 class="text-orange-1 fw-bold mb-3 d-none d-md-inline d-lg-none">$790/month</h4>
+                  <h2 class="text-orange-1 fw-bold mb-3 d-none d-lg-inline">$790/month</h2>
+                  <a class="btn bg-yellow-1 fw-bold py-1 px-3 py-md-3 px-md-4 lh-1 rounded-custom-buttom"> Get <span class="d-none d-md-inline">started</span></a>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center col-3">
+                  <p class="fw-bold text-yellow-1 fs-8 mb-0 py-2 text-center d-md-none">3 active task </p>
+                  <p class="fw-bold text-yellow-1 fs-6 mb-0 py-2 text-center d-none d-md-inline">3 active task </p>
+                  <h6 class="text-orange-1 fw-bold mb-3 d-md-none text-center">$1.169 <br> month</h6>
+                  <h4 class="text-orange-1 fw-bold mb-3 d-none d-md-inline d-lg-none">$1.169/month</h4>
+                  <h2 class="text-orange-1 fw-bold mb-3 d-none d-lg-inline">$1.169/month</h2>
+                  <a class="btn bg-yellow-1 fw-bold py-1 px-3 py-md-3 px-md-4 lh-1 rounded-custom-buttom"> Get <span class="d-none d-md-inline">started</span></a>
+                </div>
+                <div class="d-flex flex-column justify-content-center align-items-center col-3">
+                  <p class="fw-bold text-yellow-1 fs-8 mb-0 py-2 text-center d-md-none">8 active task </p>
+                  <p class="fw-bold text-yellow-1 fs-6 mb-0 py-2 text-center d-none d-md-inline">8 active task </p>
+                  <h6 class="text-orange-1 fw-bold mb-3 d-md-none text-center">$1.742 <br> month</h6>
+                  <h4 class="text-orange-1 fw-bold mb-3 d-none d-md-inline d-lg-none">$1.742/month</h4>
+                  <h2 class="text-orange-1 fw-bold mb-3 d-none d-lg-inline">$1.742/month</h2>
+                  <a class="btn bg-yellow-1 fw-bold py-1 px-3 py-md-3 px-md-4 lh-1 rounded-custom-buttom"> Get <span class="d-none d-md-inline">started</span></a>
+                </div>
+              </div>
+            </section>
+          </section>
         </div>
         <!-- Tab content Integrations -->
         <div id="Integrations" class="tabcontent py-5">
@@ -159,7 +405,7 @@
                 </div>
             </div>
         </div>
-    </section>
+      </section>
     </main>
     <footer>
         <div class="bg-gray-1 py-5">
@@ -208,7 +454,7 @@
 
     <script>
       // CODIGO JAVASCRIPT PARA NAVBAR
-      function openMenuFaqs(evt, cityName) {
+      function openMenuOurPlans(evt, itemName) {
         // Declarar variables
         var i, tabcontent, tablinks;
 
@@ -225,7 +471,7 @@
         }
 
         // se muestra la tab seleccionada y se activa el boton
-        document.getElementById(cityName).style.display = "flex";
+        document.getElementById(itemName).style.display = "flex";
         evt.currentTarget.className += " active";
       }
     </script>
