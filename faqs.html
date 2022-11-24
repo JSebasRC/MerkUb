@@ -50,8 +50,11 @@
                               </div>
                               <p class="px-lg-5 mx-md-2 fs-6 fw-medium text-white">You can select one of the three packages we offer where you can send unlimited tasks to the support team, the ticket portal is available 24/7 to send your Hubspot activities and you can check the status of your activities and process them. </p>
                           </div>
-                          <div class="col-12 col-md-6 col-lg-5 d-flex justify-content-center px-4 px-md-3 px-lg-5">                    
-                              <img class="img-fluid w-auto h-auto" src="assets/images/personafaqs.png" alt="">
+                          <div class="col-12 col-md-6 col-lg-5 d-flex justify-content-center px-4 px-md-3 px-lg-5 position-relative">                    
+                              <img class="img-fluid w-auto h-auto" src="assets/images/personafaqs.png" alt="" style="z-index: 1;">
+                              <div class="animation-bg-images">
+                                <div class=""></div>
+                              </div>
                           </div>
                       </div>
                   </div>
@@ -298,7 +301,7 @@
         }
 
         // se muestra la tab seleccionada y se activa el boton
-        document.getElementById(itemName).style.display = "flex";
+        document.getElementById(itemName).style.display = "inline";
         evt.currentTarget.className += " active";
       }
     </script>

@@ -239,6 +239,52 @@ body {
 .tabcontent {
     display: none;
 }
+@-webkit-keyframes changeColorBg {  
+    0% { background-color: var(--orange-1); }
+    50% { background-color: var(--blue-1); }
+    100% { background-color: var(--orange-1); }
+}
+  @-webkit-keyframes changeColorBorder {  
+    0% { border: 8px solid  var(--yellow-1); }
+    50% { border: 8px solid  var(--green-3); }
+    100% { border: 8px solid  var(--yellow-1); }
+}
+
+.animation-bg-images {
+    position: absolute;
+    right: 25%;
+    top: 10%;
+    width: 270px;
+    height: 270px;
+    border-radius: 30px;
+    transform: rotate(-30deg);
+    -webkit-animation-name: changeColorBg;
+    -webkit-animation-iteration-count: infinite;  
+    -webkit-animation-duration: 3000ms; 
+}
+.animation-bg-images div {
+    width: 270px;
+    height: 270px;
+    background-color: transparent;
+    border: 8px solid #F9AF59;
+    border-radius: 30px;
+    transform: rotate(45deg);
+    -webkit-animation-name: changeColorBorder;
+    -webkit-animation-iteration-count: infinite;  
+    -webkit-animation-duration: 3000ms; 
+}
+
+@media (max-width: 1024px) {
+    .animation-bg-images {
+        width: 220px;
+        height: 220px;
+    }
+    .animation-bg-images div {
+        width: 220px;
+        height: 220px;
+    }
+}
+  
 
 /* ESTILOS HOME */
 
@@ -247,6 +293,7 @@ body {
     height: 40px;
     width: 40px;
 }
+
 
 /* ESTILOS OUR PROCCESS */
 
@@ -284,14 +331,16 @@ body {
 
 /* ESTILOS PAGINA OUR PLANS */
 
-.border-table-custom {
-    border-right: solid 1px var(--gray-2);
+@media (min-width: 768px){
+    .border-table-custom {
+        border-right: solid 1px var(--gray-2);
+    }
 }
 .list-position{
     list-style-position: outside;
 }
 .width-cards-ourplans {
-    max-width: 19rem;
+    max-width: 17.063rem;
     width: 100%;
 }
 .bg-green-3-card {
@@ -325,4 +374,40 @@ body {
 }
 .border-table-header {
     border-radius: 10px 10px 0px 0px;
+}
+
+/* START A FREE TRIAL */
+
+#page-startFreeTrial .animation-bg-images-big {
+    position: absolute;
+    right: 18%;
+    top: 10%;
+    width: 340px;
+    height: 340px;
+    border-radius: 30px;
+    transform: rotate(-30deg);
+    -webkit-animation-name: changeColorBg;
+    -webkit-animation-iteration-count: infinite;  
+    -webkit-animation-duration: 3000ms; 
+}
+#page-startFreeTrial  .animation-bg-images-big div {
+    width: 340px;
+    height: 340px;
+    background-color: transparent;
+    border: 8px solid #F9AF59;
+    border-radius: 30px;
+    transform: rotate(45deg);
+    -webkit-animation-name: changeColorBorder;
+    -webkit-animation-iteration-count: infinite;  
+    -webkit-animation-duration: 3000ms; 
+}
+@media (max-width: 1024px) {
+    #page-startFreeTrial .animation-bg-images-big {
+        width: 240px;
+        height: 240px;
+    }
+    #page-startFreeTrial .animation-bg-images-big div {
+        width: 240px;
+        height: 240px;
+    }
 }
