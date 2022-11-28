@@ -129,6 +129,7 @@ body {
     width: 5rem;
     background-color: var(--orange-1);
 }
+
 .text-decoration-underline-custom:hover {
     text-decoration: underline 4px var(--orange-1) !important;
     text-underline-offset: 4px;
