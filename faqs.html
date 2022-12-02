@@ -65,13 +65,25 @@
       <!-- SECCION 2 NAV BAR Y CONTENIDO DINAMICO-->
       <section class="container py-5 px-md-5">
         <!-- Tab links -->
-        <div class="d-flex d-flex justify-content-center align-items-center sticky-lg-top" style="top: 106px;">
-          <div class="tab d-flex flex-column flex-md-row bg-gray-4 gap-2 gap-md-4 p-2">
-            <button class="tablinks fw-bold fs-6 text-gray-1" onclick="openMenuFaqs(event, 'Common')" id="defaultOpen">Common questions</button>
-            <button class="tablinks fw-bold fs-6 text-gray-1" onclick="openMenuFaqs(event, 'Marketing')">Marketing questions</button>
-            <button class="tablinks fw-bold fs-6 text-gray-1" onclick="openMenuFaqs(event, 'Sales')">Sales questions</button>
-            <button class="tablinks fw-bold fs-6 text-gray-1" onclick="openMenuFaqs(event, 'Services')">Services questions</button>
-          </div>
+        <div class="sticky-top position-menu">
+          <nav class="navbar navbar-expand-lg d-flex align-items-cente justify-content-center" id="navbar">
+            <button class="navbar-toggler my-2 py-2 px-4 btn bg-yellow-1 rounded-custom-buttom fs-6 fw-bold text-gray-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+              <div class="d-flex align-items-center gap-2">
+                <i class="fa-solid fa-angle-down fs-5"></i>
+                <span class="">Menu FAQs</span>
+              </div>
+            </button>
+            <div class="d-flex justify-content-center">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+                <div class="tab d-flex flex-column flex-md-row bg-gray-4 gap-2 gap-md-4 p-2">
+                  <button class="tablinks fw-bold fs-6 text-gray-1" onclick="openMenuFaqs(event, 'Common')" id="defaultOpen">Common questions</button>
+                  <button class="tablinks fw-bold fs-6 text-gray-1" onclick="openMenuFaqs(event, 'Marketing')">Marketing questions</button>
+                  <button class="tablinks fw-bold fs-6 text-gray-1" onclick="openMenuFaqs(event, 'Sales')">Sales questions</button>
+                  <button class="tablinks fw-bold fs-6 text-gray-1" onclick="openMenuFaqs(event, 'Services')">Services questions</button>
+                </div>
+              </div>
+            </div>
+          </nav>
         </div>
 
         <!-- Tab content common questions -->

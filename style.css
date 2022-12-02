@@ -385,6 +385,22 @@ details[open] summary ~ * {
     border-radius: 10px 10px 0px 0px;
 }
 
+.position-menu {
+    top: 72px;
+}
+@media (min-width: 768px){
+    .position-menu {
+        top: 98px;
+    }
+}
+#navbar .navbar-toggler {
+    border: none;    
+}
+#navbar .navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
 
 /* START A FREE TRIAL */
 
