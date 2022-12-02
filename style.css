@@ -315,10 +315,10 @@ body {
 
 /* ESTILOS FAQS */
 
-#page-faqs summary {list-style: none}
-#page-faqs summary::-webkit-details-marker {display: none; }
+summary {list-style: none}
+summary::-webkit-details-marker {display: none; }
 
-#page-faqs details summary::before {
+details summary::before {
     content: "\2b";
     font-family: "Font Awesome 6 Free";
     font-size: 24px;
@@ -326,9 +326,17 @@ body {
     transition: 1s;
     padding: 0 16px 12px 0;
 }
-#page-faqs details[open] summary::before {
+details[open] summary::before {
     content:"\f068";
 }
+
+details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+  }
+  @keyframes sweep {
+    0%    {opacity: 0; margin-left: -10px}
+    100%  {opacity: 1; margin-left: 0px}
+  }
 
 /* ESTILOS PAGINA OUR PLANS */
 
@@ -377,6 +385,7 @@ body {
     border-radius: 10px 10px 0px 0px;
 }
 
+
 /* START A FREE TRIAL */
 
 #page-startFreeTrial .animation-bg-images-big {
@@ -412,3 +421,11 @@ body {
         height: 240px;
     }
 }
+/* .collapse:not(.show) {
+    display: none;
+}
+@media (min-width: 768px) {
+    .collapse:not(.show) {
+        display: block;
+    }
+} */
